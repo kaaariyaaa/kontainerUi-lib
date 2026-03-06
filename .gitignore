@@ -1,0 +1,8 @@
+.direnv
+.kotlin
+.gradle
+build
+bin
+
+# local workspace
+server
