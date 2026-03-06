@@ -27,8 +27,8 @@ ui =
             )
 
             bind('#') { item { pane() }; cancelClick = true }
-            bind('<') { onClick { updateStateAndRefresh { it.copy(page = (it.page - 1).coerceAtLeast(1)) } } }
-            bind('>') { onClick { updateStateAndRefresh { it.copy(page = it.page + 1) } } }
+            bind('<') { onClick { updateStateAndRefresh { current -> current.copy(page = (current.page - 1).coerceAtLeast(1)) } } }
+            bind('>') { onClick { updateStateAndRefresh { current -> current.copy(page = current.page + 1) } } }
             bind('S') { onClick { navigate("storage", state) } }
         }
 

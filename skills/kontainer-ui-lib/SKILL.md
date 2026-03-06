@@ -54,6 +54,7 @@ If you need quick references, use:
 - `slot(index)` is for explicit overrides and edge cases.
 - Prefer typed state menus (`menu<State>(...)`) for non-trivial workflows.
 - Keep mapping defaults intuitive (`sequential()`).
+- In examples and docs, prefer explicit lambda parameter names (for example `current`) over implicit `it` for state transforms such as `updateStateAndRefresh`.
 
 ## Runtime Safety Rules
 
